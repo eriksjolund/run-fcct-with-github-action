@@ -11,5 +11,62 @@
         ]
       }
     ]
+  },
+  "storage": {
+    "directories": [
+      {
+        "group": {
+          "name": "root"
+        },
+        "path": "/srv/nginx",
+        "user": {
+          "name": "root"
+        },
+        "mode": 493
+      }
+    ],
+    "files": [
+      {
+        "group": {
+          "name": "root"
+        },
+        "path": "/etc/systemd/system/nginx-podman.service",
+        "user": {
+          "name": "root"
+        },
+        "contents": {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/4yST2sbQQzF7/Mp5pKjsu01MIcUu2CKXVM7lGJMGM9qXeFZadBonfjbF/9rA3Fpr0/ST3rirZ6YbO1GWJNSMRIOsy3xq38h++nn0vaR3ffIVgOjvYju7i3qFs09doZ6FUE4E+O15lYL1D0lXLsx70mFe2QL86+j6ePsefFjsRxPR89Ps8ky3LH7htWiWhCGLlIeFN34FdPiKM4VQ7MhbrT30Pk7a/h4HpTTZfeF2ndaMgVq/yBCM1Q9Mc4NXgf20HqAJNwLQ6G2o4w34QDpL9XzmmPDVmUoNbBcgN4DKJYcE3oAjj36t5Me9r6p0mOThA3ZHpqq6Qx/UPEAFdOgZAeQYj7HDebQUo2bjL6VtEO9J2kybTTq4TKXo2G1i2kp7zxXk+IBaMui+B+uzH/88Js2l3rji/0bXvdPpJtPRp8pY7jxZfeFcp5Ki4GF0S0PBUMnuiPeOreacLWY8/oUQ2w/HUI/ZCMYKuolcL7FLg7Zrvn7FQAA///DmXmR1gIAAA=="
+        },
+        "mode": 420
+      },
+      {
+        "group": {
+          "name": "root"
+        },
+        "path": "/etc/systemd/system-preset/system-preset/20-nginx-podman.preset",
+        "user": {
+          "name": "root"
+        },
+        "contents": {
+          "source": "data:,enable%20nginx-podman.service%0A"
+        },
+        "mode": 420
+      },
+      {
+        "group": {
+          "name": "root"
+        },
+        "path": "/srv/nginx/index.html",
+        "user": {
+          "name": "root"
+        },
+        "contents": {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/zSOPW7DMAyFd5/iVXuhtQOtpWiHDMmQEygW/QNIoiDTgH37wJAzkQA/vu/RV5BBj8KYNUXX0TkQfZ56w9m4DqCZfTgXgBKrxzD7urL2ZtPx+8dcJ100svvbfSqRISPqlvOSJ9ynJe+QjH8OUj1+pfLjSbY9nAL7MdBLwnHlFXfbVsUqiaG8K9nS4MaQbYXfAQAA//+wBKRcwQAAAA=="
+        },
+        "mode": 420
+      }
+    ]
   }
 }
