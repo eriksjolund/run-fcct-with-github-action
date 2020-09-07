@@ -7,63 +7,23 @@
       {
         "name": "core",
         "sshAuthorizedKeys": [
-          "ssh-rsa ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC7UV5Xw9QTBQEVXpEXrY1jGQ3D7ckUowZiVidT5DoPpuO36r3G4HUXolP2R/TnIM5XgrFIpkbCpOUBdV8gsjuLwh2hOIM6PlKTYWy//CnS0W0Kd0o/M8xQS+2VcOBsyKpeE2harGKLpANGcTT1rFANB/6VHh0aRqOJCfP7qt6nXvYfbr8rmA9mxEOhcwfy4zJ/ZP0tguKvnLneAX6K2+3jDy3OOIwJmkFrv0pCFJCmDcf/mV6pA6x70EE5kZpHJCS1W9sALxDfVHj1Vy15x7h+b6HSnuEGwxBCsdpDqbxElyZgK6DWTnzmVSeSoa/BNF2w8vuOkKdjklJ+p8u/tpPtPP0T+nREkv4bUsc+qG9J6vdHm8eJZP3JSmS25dxkTeFVDhf6wWpxkYoxrQEyZF0WLeNtpZua/sCp4qAtsfqg9MVg3gmD6zLuthzmV3GzT7bDzwayNnZ/CqxkT/3EY2fVMFeyjTpvM2MvwbcAjRi3gvLxHctuNhEGxysbIi4xkL8= example@laptop"
+          "ssh-rsa ssh-rsa AAAAB3NzaC1yc2EA+++++++++++++++JUST_AN_EXAMPLE+++REPLACE_WITH_ANOTHER_SSH_KEY++++++++++++++++++++++++++++HUXolP2R/TnIM5XgrFIpkbCpOUBdV8gsjuLwh2hOIM6PlKTYWy//CnS0W0Kd0o/M8xQS+2VcOBsyKpeE2harGKLpANGcTT1rFANB/6VHh0aRqOJCfP7qt6nXvYfbr8rmA9mxEOhcwfy4zJ/ZP0tguKvnLneAX6K2+3jDy3OOIwJmkFrv0pCFJCmDcf/mV6pA6x70EE5kZpHJCS1W9sALxDfVHj1Vy15x7h+b6HSnuEGwxBCsdpDqbxElyZgK6DWTnzmVSeSoa/BNF2w8vuOkKdjklJ+p8u/tpPtPP0T+nREkv4bUsc+qG9J6vdHm8eJZP3JSmS25dxkTeFVDhf6wWpxkYoxrQEyZF0WLeNtpZua/sCp4qAtsfqg9MVg3gmD6zLuthzmV3GzT7bDzwZ/C2fVMFeyjTpvMRi3gvLuNhEGxysbIi4xkL8= example@laptop"
         ]
       }
     ]
   },
   "storage": {
-    "directories": [
-      {
-        "group": {
-          "name": "root"
-        },
-        "path": "/srv/nginx",
-        "user": {
-          "name": "root"
-        },
-        "mode": 493
-      }
-    ],
     "files": [
       {
         "group": {
           "name": "root"
         },
-        "path": "/etc/systemd/system/nginx-podman.service",
+        "path": "/etc/file1.txt",
         "user": {
           "name": "root"
         },
         "contents": {
-          "compression": "gzip",
-          "source": "data:;base64,H4sIAAAAAAAC/4yST2sbQQzF7/Mp5pKjsu01MIcUu2CKXVM7lGJMGM9qXeFZadBonfjbF/9rA3Fpr0/ST3rirZ6YbO1GWJNSMRIOsy3xq38h++nn0vaR3ffIVgOjvYju7i3qFs09doZ6FUE4E+O15lYL1D0lXLsx70mFe2QL86+j6ePsefFjsRxPR89Ps8ky3LH7htWiWhCGLlIeFN34FdPiKM4VQ7MhbrT30Pk7a/h4HpTTZfeF2ndaMgVq/yBCM1Q9Mc4NXgf20HqAJNwLQ6G2o4w34QDpL9XzmmPDVmUoNbBcgN4DKJYcE3oAjj36t5Me9r6p0mOThA3ZHpqq6Qx/UPEAFdOgZAeQYj7HDebQUo2bjL6VtEO9J2kybTTq4TKXo2G1i2kp7zxXk+IBaMui+B+uzH/88Js2l3rji/0bXvdPpJtPRp8pY7jxZfeFcp5Ki4GF0S0PBUMnuiPeOreacLWY8/oUQ2w/HUI/ZCMYKuolcL7FLg7Zrvn7FQAA///DmXmR1gIAAA=="
-        },
-        "mode": 420
-      },
-      {
-        "group": {
-          "name": "root"
-        },
-        "path": "/etc/systemd/system-preset/system-preset/20-nginx-podman.preset",
-        "user": {
-          "name": "root"
-        },
-        "contents": {
-          "source": "data:,enable%20nginx-podman.service%0A"
-        },
-        "mode": 420
-      },
-      {
-        "group": {
-          "name": "root"
-        },
-        "path": "/srv/nginx/index.html",
-        "user": {
-          "name": "root"
-        },
-        "contents": {
-          "compression": "gzip",
-          "source": "data:;base64,H4sIAAAAAAAC/zSOPW7DMAyFd5/iVXuhtQOtpWiHDMmQEygW/QNIoiDTgH37wJAzkQA/vu/RV5BBj8KYNUXX0TkQfZ56w9m4DqCZfTgXgBKrxzD7urL2ZtPx+8dcJ100svvbfSqRISPqlvOSJ9ynJe+QjH8OUj1+pfLjSbY9nAL7MdBLwnHlFXfbVsUqiaG8K9nS4MaQbYXfAQAA//+wBKRcwQAAAA=="
+          "source": "data:,Just%20some%20example%20text%20...%0A"
         },
         "mode": 420
       }
